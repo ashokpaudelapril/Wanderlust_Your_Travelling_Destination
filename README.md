@@ -58,6 +58,4 @@ Wanderlust Listings is a web application built with Node.js, Express, and MongoD
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
-```
 
-Feel free to customize it further as needed! If you have any other questions or need more help, just let me know.
