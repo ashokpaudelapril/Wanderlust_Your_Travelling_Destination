@@ -1,0 +1,47 @@
+<%- layout("/layouts/boilerplate") %>
+
+    <body>
+        <h3>Add your new place!</h3>
+        <form method="POST" action="/listing">
+            <label for="title">
+                Title:
+                <input id="title" name="Listing[title]" type="text" required>
+            </label>
+            <br>
+            <br>
+            <label for="description">
+                Description:
+                <textarea id="description" name="Listing[description]" type="text" required></textarea>
+            </label>
+            <br>
+            <br>
+            <label for="image">
+                Image:
+                <input id="image" name="Listing[image]" type="text" required>
+            </label>
+            <br>
+            <br>
+            <label for="price">
+                Price:
+                <input id="price" name="Listing[price]" type="number" min="100" required>
+            </label>
+            <br>
+            <br>
+            <label for="location">
+                Location:
+                <input id="location" name="Listing[location]" type="text" required>
+            </label>
+            <br>
+            <br>
+            <label for="country">
+                Country:
+                <input id="country" name="Listing[country]" type="text" required>
+            </label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+
+    </html>
