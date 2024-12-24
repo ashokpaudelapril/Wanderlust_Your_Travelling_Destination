@@ -5,12 +5,13 @@
             <div class="col-8 offset-2">
                 <h3>Add your new place!</h3>
 
-                <form method="POST" action="/listing">
+                <form method="POST" action="/listing" novalidate class="needs-validation">
                     <div class="mb-3 mt-3">
                         <label for="title" class="form-label">
                             Title: </label>
                         <input id="title" placeholder="Add a catchy Title" name="Listing[title]" type="text" required
                             class="form-control">
+                        <div class="valid-feedback">Title looks good!</div>
 
                     </div>
 
@@ -19,6 +20,7 @@
                             Description: </label>
                         <textarea id="description" name="Listing[description]" type="text" class="form-control"
                             required></textarea>
+                        <div class="invalid-feedback">Please enter a short description</div>
 
                     </div>
 
@@ -28,6 +30,7 @@
                         <input id="image" placeholder="Enter image URL/Link" name="Listing[image]" type="text"
                             class="form-control" required>
 
+
                     </div>
 
                     <div class="row">
@@ -36,14 +39,14 @@
                                 Price: </label>
                             <input id="price" placeholder="1200" name="Listing[price]" type="number" min="100"
                                 class="form-control" required>
-
+                            <div class="invalid-feedback">Please enter a valid price!</div>
                         </div>
                         <div class="mb-3 col-md-8">
                             <label for="country" class="form-label">
                                 Country: </label>
                             <input id="country" placeholder="US" name="Listing[country]" class="form-control"
                                 type="text" required>
-
+                            <div class="invalid-feedback">Please enter a valid country name!</div>
                         </div>
                     </div>
 
@@ -53,6 +56,7 @@
                             Location: </label>
                         <input id="location" placeholder="San Marcos, Texas" name="Listing[location]"
                             class="form-control" type="text" required>
+                        <div class="invalid-feedback">Please enter a valid location!</div>
 
                     </div>
 
